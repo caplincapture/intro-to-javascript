@@ -2,7 +2,7 @@
 
 Learn the fundamentals of JavaScript, the most popular programming language in web development.
 
-# Lessons:
+# Lessons
 * Datatypes and Variables
 * Conditionals
 * Loops
