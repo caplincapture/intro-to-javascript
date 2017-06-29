@@ -1,0 +1,97 @@
+/*
+ * Programming Quiz: Laugh it Off 1 (5-1)
+ */
+
+// your code goes here
+function laugh(){
+    return "hahahahahahahahahaha!";
+}
+
+console.log(laugh());
+
+/*
+ * Programming Quiz: Laugh it Off 2 (5-2)
+ */
+ 
+// declare your function
+// then, call it!
+// print the output with console.log
+function laugh(num){
+    var tmp = "";
+    for(var i = 0; i < num; i++){
+        tmp += "ha";
+    }
+    return tmp+"!";
+}
+
+console.log(laugh(3));
+
+/*
+ * Programming Quiz: Build A Triangle (5-3)
+ */
+
+// creates a line of * for a given length
+function makeLine(length) {
+    var line = "";
+    for (var j = 1; j <= length; j++) {
+        line += "* ";
+    }
+    return line + "\n";
+}
+
+// your code goes here.  Make sure you call makeLine() in your own code.
+function buildTriangle(n){
+    var triangle = "";
+    for(var i = 1; i <= n; i++){
+        triangle += makeLine(i);
+    }
+    return triangle;
+}
+
+console.log(buildTriangle(10));
+
+/*
+ * Programming Quiz: Laugh (5-4)
+ */
+
+var laugh = function(num){
+    var tmp = "";
+    for(var i = 0; i < num; i++){
+        tmp += "ha"
+    }
+    return tmp+"!";
+}
+
+console.log(laugh(10));
+
+/*
+ * Programming Quiz: Cry (5-5)
+ */
+
+// your code goes here
+var cry = function scary(){
+    return "boohoo!";
+}
+
+console.log(cry());
+
+/*
+ * Programming Quiz: Inline Functions (5-6)
+ */
+
+// don't change this code
+function emotions(myString, myFunc) {
+    console.log("I am " + myString + ", " + myFunc(2));
+}
+
+// your code goes here
+// call the emotions function here and pass in an
+// inline function expression
+
+emotions("happy", function laugh(num){
+    var tmp = "";
+    for(var i = 0; i < num; i++){
+        tmp += "ha";
+    }
+    return tmp+"!";
+});
